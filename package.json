@@ -1,23 +1,17 @@
 {
-  "name": "service_desk",
+  "name": "desk_service",
   "version": "1.0.0",
-  "description": "Aplicacion de sistema de ticket, proyecto FULL STACK universidad",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jeffzamora/service_desk.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jeffzamora/service_desk/issues"
-  },
-  "homepage": "https://github.com/Jeffzamora/service_desk#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.1"
   }
 }
