@@ -24,6 +24,8 @@ router.get("/usuario/:usu_nom",(req,res)=>{
     .catch((error)=>res.send(error));
 })
 
+
+//Metodo para Actualizar un usuario especifico
 router.put("/usuario/:usu_nom",async (req,res)=>{
     const { usu_nom }=req.params;
     nuevoUsuario = req.body;
@@ -34,6 +36,8 @@ router.put("/usuario/:usu_nom",async (req,res)=>{
     .catch((error)=>res.send(error));
 })
 
+
+//Borrando usuario
 router.delete("/usuario/:usu_nom",(req,res)=>{
     const { usu_nom }=req.params;
 
