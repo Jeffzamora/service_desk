@@ -6,7 +6,7 @@ const router=express.Router();
 
 //Metodo para obtener el listado de usuarios
 router.get("/usuario",(req,res)=>{
-    Usuarios.find()
+    Usuarios.find().select({_id:0,usu_nom:1,usu_correo:1,rol_id:1,usu_telf:1,est:1})
     .then((data)=>{
         res.json(data)
     })
