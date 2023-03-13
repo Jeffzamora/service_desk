@@ -13,7 +13,7 @@ router.get("/usuario",(req,res)=>{
     .catch((error)=>res.send(error));
 })
 
-//Metodo para obtner un usuario en especifico
+//Metodo para obtener un usuario en especifico
 router.get("/usuario/:usu_nom",(req,res)=>{
     const{usu_nom }=req.params;
 
