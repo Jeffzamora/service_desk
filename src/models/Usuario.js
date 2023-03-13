@@ -16,4 +16,5 @@ const usuarioSchema = mongoose.Schema({
       
 });
 
+//conexion a la collection user
 module.exports=mongoose.model('users',usuarioSchema);
