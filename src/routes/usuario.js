@@ -13,10 +13,11 @@ router.get("/usuario",(req,res)=>{
     .catch((error)=>res.send(error));
 })
 
+//Metodo para obtner un usuario en especifico
 router.get("/usuario/:usu_nom",(req,res)=>{
-    const { usu_nom }=req.params;
+    const{usu_nom }=req.params;
 
-    Usuarios.find({usu_nom:usu_nom}).select({usu_pass:0,__v:0,_id:0})
+    Usuarios.find({usu_nom:usu_nom}).select({usu_pass:0,_id:0})
     .then((data)=>{
         res.json(data);
     })
