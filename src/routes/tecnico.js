@@ -31,7 +31,7 @@ router.put("/tecnico/:tec_nom",async (req,res)=>{
     nuevoTecnico = req.body;
 
     Tecnicos.updateOne({tec_nom:tec_nom},
-        {$set: {tec_nom:nuevoTecnico.tec_nom}})
+        {$set: {tec_nom:nuevoTecnico.tec_nom,tec_direc:nuevoTecnico.tec_direc}})
     .then((data)=>{res.json(data)})
     .catch((error)=>res.send(error));
 })
